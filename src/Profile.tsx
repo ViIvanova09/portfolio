@@ -4,6 +4,7 @@ type ProfileData = {
   id: number;
   name: string;
   role: string;
+  bio: string;
 };
 export default function Profile() {
   const [profile, setProfile] = useState<ProfileData | null>(null);
@@ -33,6 +34,7 @@ export default function Profile() {
     <div>
       <h2>{profile.name}</h2>
       <p>{profile.role}</p>
+      <p>{profile.bio}</p>
     </div>
   );
 }
