@@ -1,0 +1,39 @@
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 12px;
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 48px 24px;
+}
+
+.profile__photo {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.profile__name {
+  color: var(--text-h);
+  font-weight: 500;
+}
+.profile__role {
+  color: var(--accent);
+  font-weight: 500;
+}
+.profile__bio {
+  line-height: 1.8;
+  max-width: 55ch;
+}
+
+@media (max-width: 480px) {
+  .profile {
+    padding: 32px 16px;
+  }
+  .profile__photo {
+    width: 120px;
+    height: 120px;
+  }
+}

@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import "./Profile.css";
+import profileImage from "./assets/profile-photo.jpeg";
 
 type ProfileData = {
   id: number;
@@ -31,10 +33,11 @@ export default function Profile() {
     return <div>Loading...</div>;
   }
   return (
-    <div>
-      <h2>{profile.name}</h2>
-      <p>{profile.role}</p>
-      <p>{profile.bio}</p>
+    <div className="profile">
+      <img src={profileImage} alt="Viktoria" className="profile__photo" />
+      <h2 className="profile__name">{profile.name}</h2>
+      <p className="profile__role">{profile.role}</p>
+      <p className="profile__bio">{profile.bio}</p>
     </div>
   );
 }
