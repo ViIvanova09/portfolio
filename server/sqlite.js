@@ -25,7 +25,7 @@ const saveProfile = database.prepare(`
   `);
 saveProfile.run(
   1,
-  "Viki",
+  "Viktoria Ivanova",
   "Junior Software developer",
   "I have one year of professional experience using JavaScript and TypeScript to develop and maintain online games. Currently learning React and building personal projects to strengthen my front-end skills.",
 );
